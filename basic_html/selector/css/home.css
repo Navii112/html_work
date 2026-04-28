@@ -1,0 +1,17 @@
+/* ul 태그 밑의 li 모두 */
+ul li{
+  color: tomato;
+}
+.beverage {
+  color:blue;
+}
+
+#cola li{
+  color: black;
+}
+/* ol>li{
+  color: blue;
+} */
+/* #beverage>li{
+  color: brown;
+} */

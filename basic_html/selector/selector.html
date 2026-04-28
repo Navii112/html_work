@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 선택자 데모</title>
+  <link rel="stylesheet" href="./css/selector.css">
+  <!-- Google Fonts (Noto Sans KR 추천) -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 후손 선택자 -->
+   <!-- 시멘틱태그(의미론적 태그) -->
+   <section>
+    <h3>ul li -- 후손 선택자</h3>
+    <ul>
+      <li>사과</li>
+      <li>배</li>
+      <li>수박</li>
+    </ul>
+   </section>
+   <section>
+    <h3>가상클래스</h3>
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https://www.daum.net">카카오</a>
+   </section>
+   <!-- 가상클래스 : first-child / last-child / nth-child -->
+   <section>
+    <h3>:first-child / :last-child / nth-child(2)</h3>
+    <ul class="group-list">
+      <li>IVE</li>
+      <li>aespa</li>
+      <li>NewJeans</li>
+    </ul>
+   </section>
+   <section>
+    <h3>input box</h3>
+    <input type="text" placeholder="클릭해보세요">
+   </section>
+</body>
+</html>

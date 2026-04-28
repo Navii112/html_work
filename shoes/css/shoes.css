@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/shoes_background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  text-align: center;
+}
+
+.main-title {
+  /* div 자식은 마진이 서로 겹침 현상이 발생 */
+  /* 해결 방법은 부모에게 padding: 1px를 주어서 해결 */
+  color: white;
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.main-content {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main-button {
+  background-color: white;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}

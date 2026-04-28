@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/orders.css" />
+    <title>레드향 주문하기</title>
+  </head>
+  <body>
+    <!-- 서버에 데이터 전송 시 form에 기록 후 전송한다. -->
+    <form class="container">
+      <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" />
+              선물용 3kg
+            </label>
+            <input type="number" min="0" max="5" />개 (최대 5개)
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              선물용 5kg
+            </label>
+            <input type="number" min="0" max="3" />개 (최대 3개)
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              가정용 3kg
+            </label>
+            <input type="number" min="0" max="5" />개 (최대 5개)
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              가정용 5kg
+            </label>
+            <input type="number" min="0" max="3" />개 (최대 3개)
+          </li>
+        </ul>
+        <p><b>포장 선택</b></p>
+        <ul>
+          <li>
+            <!-- class : 태그 여러개 공용가능 -->
+            <!-- id : 태그 당 한개 -->
+            <!-- name : 태그 여러개 공용 -> 서버로 전송되는 이름 -->
+
+            <input type="radio" name="gift" id="gift-yes"/>
+            <label for="gift-yes">선물 포장 </label>
+          </li>
+          <li>
+            <input type="radio" name="gift" id="gift-no"/>
+            <label for="gift-no">선물 포장 안함 </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+        <li>
+          <label for="user-name">이름</label>
+          <input type="text" id="user-name" name="user-name"/>
+        </li>
+        <li>
+          <label for="address">배송 주소</label>
+          <input type="text" id="address" name="address"/>
+        </li>
+        <li>
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email"/>
+        </li>
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone" name="phone"/>
+        </li>
+        <li>
+          <label for="ride">배송 지정</label>
+          <input type="date" id="ride" name="ride"/> (주문일로부터 최소 3일 이후)
+        </li>
+        <li>
+          <label for="memo">메모</label>
+          <textarea name="memo" id="memo" rows="4" cols="40"></textarea>
+        </li>
+        </ul>
+      </fieldset>
+      <div class="buttons">
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+      </div>
+    </form>
+  </body>
+</html>

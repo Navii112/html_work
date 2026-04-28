@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+div {
+  /* 박스의 크기가 고정 */
+  /* border나 padding 영향을 받지 않도록 */
+  box-sizing: border-box;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 200px;
+  /* background-color: yellow; */
+}
+
+.product-img {
+  width: 30%;
+  height: 100%;
+  background-image: url("../images/camera.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: black; */
+  float: left;
+  margin-right: 20px;
+}
+
+.content {
+  float: left;
+  width: 60%;
+  height: 100%;
+}

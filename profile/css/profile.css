@@ -1,0 +1,34 @@
+.profileImage {
+  width: 100px;
+  /* 인라인 요소 -> 블럭요소변경 */
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  font-size: 20px;
+  color: blue;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 800;
+}
+
+p {
+  text-align: center;
+}
+
+.box {
+  width: 200px;
+  background-color: cadetblue;
+  /* height: 100px; */
+  margin: 20px;
+  padding: 40px;
+  /* border: 4px solid black; */
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+  box-shadow: 5px 5px black;
+}

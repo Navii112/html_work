@@ -1,0 +1,15 @@
+li {
+  color: red;
+}
+h2 {
+  color: darkblue;
+}
+h3 {
+  color: green;
+}
+.other {
+  text-decoration: underline;
+}
+#select {
+  font-size: 30px;
+}

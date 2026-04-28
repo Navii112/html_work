@@ -1,0 +1,11 @@
+css 선택자
+- 태그 : 현재 페이지 모든 같은 태그
+* : 모든 것
+li
+ul li : ul 태그 밑의 모든 li
+ul > li : ul 태그 밑의 직계 li
+ol, ul : ol과 ul 전체
+h1 + p : h1 태그 바로 다음 것 하나
+h1 ~ p : h1 아래의 모든 형제
+input[type="text"]
+a[href] a 태그 안에 href 전체
