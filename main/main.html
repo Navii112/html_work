@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/frontend.css" />
+    <title>지원서</title>
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="check_sign(event)" method="get">
+        <a href="../signup/signup.html"><h4>회원가입</h4></a>
+        <fieldset>
+          <h1>프론트엔드 개발자 지원서</h1>
+          <h4>
+            HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을
+            찾습니다.
+          </h4>
+          <b>개인정보</b>
+          <ul>
+            <li>
+              <label for="name">이름</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="공백없이 입력하세요"
+                autofocus
+              />
+            </li>
+            <li>
+              <label for="phone">연락처</label>
+              <input type="text" name="phone" id="phone" />
+            </li>
+          </ul>
+          <b>지원 분야</b>
+          <ul>
+          <li>
+            <input type="radio" name="check" id="publishing" value="publishing" />
+            <label for="publishing">웹 퍼블리싱</label>
+          </li>
+          <li>
+            <input type="radio" name="check" id="application" value="application" />
+            <label for="application">웹 애플리케이션 개발</label>
+          </li>
+          <li>
+            <input type="radio" name="check" id="improve" value="improve" />
+            <label for="improve">개발 환경 개선</label>
+          </li>
+          </ul>
+          <b>지원동기</b>
+          <ul>
+          <li>
+            <label for="memo"></label>
+            <textarea
+              name="memo"
+              id="memo"
+              cols="60"
+              rows="5"
+              placeholder="본사 지원 동기를 간략히 써 주세요."
+            ></textarea>
+          </li>
+          </ul>
+          <div class="buttons">
+            <input type="submit" value="접수하기" />
+            <input type="reset" value="다시 쓰기" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
