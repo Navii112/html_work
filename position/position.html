@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    height: 20000px;
+  }
+  .parent {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    /* margin: 30px; */
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  /* position : relative : 내 원래의 위치를 기준으로 이동 */
+  /* position을 주면 공중에 붕 떠버린다. */
+  /* position : absolute : 나의 부모를 기준으로 해서 움직이는 아이 */
+  /* 단, 내 조상 중 position : relative로 선언된 곳이 기준 */
+  .child {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: relative;
+    /* position: absolute; */
+    top: 100px;
+    left: 100px;
+  }
+  /* fixed : 카톡상담채널 / 맨 위로 이동 */
+  .fixed {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 400px;
+    background-color: red;
+  }
+  /* sticky : 주로 상단 메뉴 / 테이블의 헤더 */
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+  }
+</style>
+<body>
+  <div class="parent">
+    <div class="child">
+
+    </div>
+  </div>
+  <div class="sticky">sticky</div>
+  <div class="fixed">fixed</div>
+  <p>스크롤 해 보세요.</p>
+</body>
+</html>

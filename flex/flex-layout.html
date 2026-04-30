@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 1500px;
+    }
+
+    header {
+      border-bottom: 1px solid gray;
+    }
+
+    footer {
+      border-top: 1px solid gray;
+    }
+
+    nav {
+      border-right: 1px solid gray;
+    }
+
+    aside {
+      border-left: 1px solid gray;
+    }
+
+    nav, aside{
+      /* 너비 고정 */
+      flex-basis: 150px;
+      /* 다른 놈 희생 */
+      flex-shrink: 0;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    main {
+      text-align: justify;
+      padding: 10px;
+      column-count: 4;
+      column-width: 200px;
+      column-gap: 20px;
+      column-rule-color: red;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam quod cumque, minus ipsa neque nisi fuga, nostrum incidunt repellat provident minima dolor fugit consequatur doloremque aperiam iure molestias? Autem.
+        Dicta quae iusto, numquam voluptatum placeat necessitatibus quidem tempora nam? Odit ut at porro quasi, dicta sequi quibusdam enim est error magni quae eaque quo assumenda incidunt, cumque adipisci laborum.
+        Porro eos magni accusantium et enim. Libero sapiente provident obcaecati vel enim architecto, ad, nihil expedita ipsum possimus similique consequatur non totam molestias aliquid odio numquam, blanditiis voluptatem laudantium officia?
+        Est eaque voluptatum exercitationem omnis doloribus, quibusdam dolore? Excepturi quod consequuntur, obcaecati explicabo atque at rerum distinctio corporis assumenda dolore nostrum voluptatum veniam nam omnis. Repellendus recusandae consequatur pariatur totam!
+        Ab recusandae iusto quia accusamus. Provident qui nisi quibusdam assumenda nobis esse ipsam distinctio aliquam magnam doloribus non voluptas mollitia beatae blanditiis autem, alias placeat laborum minus sit itaque inventore.
+        Provident magni possimus laboriosam. Voluptates accusamus exercitationem excepturi earum corrupti quae est fugit reiciendis! Ratione quia cumque cupiditate tempore, debitis natus sunt vitae, voluptas enim illum ipsam deserunt aliquid explicabo.
+        Esse laborum recusandae architecto nam consequuntur omnis iusto, fuga est quod iure. Ea blanditiis saepe, hic sed ut cumque dolorem quo error. Voluptas sunt voluptatibus sint vero rerum placeat at.
+        Ipsum rem sunt, non, rerum esse odio facilis cum eveniet porro eligendi est exercitationem vel nobis nam perspiciatis dolor? Perspiciatis, autem earum labore dignissimos minima eveniet ratione recusandae expedita sit.
+        Alias dolorem doloribus omnis. Suscipit sequi distinctio fugit exercitationem error at quod porro magnam, excepturi accusantium ratione earum quam voluptatum? Facere unde odit illo enim perferendis eligendi incidunt ipsa assumenda?
+        Quos asperiores ex tempore quisquam modi obcaecati dolorum expedita libero praesentium saepe sapiente labore incidunt possimus fugiat beatae, doloremque ullam commodi! Porro commodi doloremque incidunt libero nemo consequatur provident sed.</p>
+      </main>
+      <aside>
+        AD (광고)
+      </aside>
+    </section>
+    <footer>
+      <a href="www.naver.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>

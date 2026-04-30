@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: powderblue;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      /* 교차축의 중심 */
+      align-items: center;
+      /* 주축을 중심으로 맞춤 */
+      justify-content: center;
+    }
+    .item {
+      width: 50px;
+      height: 50px;
+      background-color: tomato;
+      border: 1px solid white;
+      /* div 태그 내 내용 가로 맞춤 */
+      text-align: center;
+      /* div 태그 내 내용 세로 맞춤 */
+      align-content: center;
+    }
+    /* 특정 자식만 배율을 지정하는 법 */
+    /* .item:nth-child(2), .item:nth-child(4) {
+      flex-grow: 2;
+    } */
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- flex-basis = 자기값보다 브라우저가 작아지면 희생 -->
+     <!-- flex-shrink = 자기의 크기를 무조건 고집 함. -->
+    <!-- <div class="item" style="flex-basis: 600px; flex-shrink: 0;">1</div> -->
+    <div class="item" style="flex-grow: 2;">1</div>
+    <div class="item" style="flex-grow: 8;">2</div>
+    <div class="item" style="flex-grow: 2;">3</div>
+  </div>
+</body>
+</html>
